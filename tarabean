@@ -1,0 +1,14 @@
+#!/bin/bash
+# Tarabean Puzzle Solver - Global Launcher
+
+# Hardcoded project path to ensure it works even via symlink
+PROJECT_DIR="/home/clay/.gemini/antigravity/scratch/tarabean_solver"
+
+# Activate virtualenv if present
+if [ -d "$PROJECT_DIR/venv" ]; then
+    source "$PROJECT_DIR/venv/bin/activate"
+fi
+
+# Run the application
+cd "$PROJECT_DIR"
+python3 "main.py" "$@"
