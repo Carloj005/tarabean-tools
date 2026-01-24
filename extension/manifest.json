@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Tarabean KeepAlive",
+    "version": "1.0",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://tarabean.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://tarabean.com/*"
+            ],
+            "js": [
+                "keepalive.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
