@@ -13,11 +13,11 @@ class Config:
     PUZZLE_URL = "https://tarabean.com/puzzle"
     
     # Timing (Seconds) - ULTRA TURBO MODE
-    MIN_JITTER = 0.005
     MAX_JITTER = 0.02
     PAGE_LOAD_TIMEOUT = 30
     REFRESH_INTERVAL = 1800 # 30 Minutes
     STUCK_TIMEOUT = 60 # 1 Minute (Reload if nothing happens)
+    LOG_FILE_PATH = "loginfo.txt"
     
     @staticmethod
     def get_chrome_path():
